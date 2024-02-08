@@ -27,7 +27,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
             <FontAwesomeIcon icon={faUserFriends} size="lg" />
             {isOpen && <span className="link-text">Users</span>}
           </Nav.Link>
-          {/* Add more Nav.Link items as needed */}
         </Nav>
       </div>
     </div>
