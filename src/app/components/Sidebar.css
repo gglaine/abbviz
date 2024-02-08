@@ -1,0 +1,27 @@
+/* src/app/components/Sidebar.css */
+.sidebar {
+    transition: width 0.3s ease-in-out;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1050; /* Above most content */
+  }
+  
+  .sidebar.collapsed {
+    width: 50px; /* Only show icons */
+  }
+  
+  .sidebar.expanded {
+    width: 230px; /* Space for icons and text */
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust for inside the sidebar */
+    border: none;
+    background-color: transparent; /* Blend with sidebar */
+  }
+  
