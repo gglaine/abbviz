@@ -1,4 +1,5 @@
-import { useState, CSSProperties } from 'react';
+import { useState } from 'react';
+import type { CSSProperties } from 'react';
 import Sidebar from './app/components/Sidebar';
 import Navbar from './app/components/Navbar';
 import MainContent from './app/components/MainContent';

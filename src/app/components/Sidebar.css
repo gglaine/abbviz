@@ -1,6 +1,6 @@
-/* src/app/components/Sidebar.css */
+/* Sidebar.css */
 
-
+/* Sidebar container */
 .sidebar {
     transition: width 0.3s ease-in-out;
     position: fixed;
@@ -9,29 +9,72 @@
     height: 100vh;
     overflow-y: auto;
     z-index: 1050; /* Above most content */
+    background-color: rgb(240, 242, 245); /* Set background color */
   }
 
+  .sidebar-content {
+    background: "F0F2F5";
+  }
+  
+  /* Sidebar logo */
   .sidebar-logo {
-    color:'blue';
+    color: blue;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 16.5px;
-    text-shadow: 4px 4px 15px rgba(92,176,255,.3);
+    text-shadow: 4px 4px 15px rgba(92, 176, 255, 0.3);
   }
   
+  /* Collapsed state */
   .sidebar.collapsed {
     width: 50px; /* Only show icons */
   }
   
+  /* Expanded state */
   .sidebar.expanded {
     width: 230px; /* Space for icons and text */
   }
   
+  /* Toggle button */
   .toggle-btn {
     position: absolute;
     top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust for inside the sidebar */
-    border: none;
+    right: -50px; /* Adjust for inside the sidebar */
+    border: none; /* Remove border */
     background-color: transparent; /* Blend with sidebar */
+  }
+  
+  /* Sidebar links container */
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Sidebar links */
+  .sidebar-nav .sidebar-link {
+    display: flex;
+    align-items: center;
+    color: #6c757d; /* Default grey color */
+    transition: color 0.3s ease; /* Transition color on hover */
+    margin-bottom: 0.5rem; /* Add space between each link */
+  }
+  
+  /* Icon */
+  .sidebar-nav .sidebar-link .icon {
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+    margin-right: 1em; /* Add space between icon and text */
+  }
+  
+  /* Text */
+  .sidebar-nav .sidebar-link .link-text {
+    white-space: nowrap; /* Prevent text wrapping */
+    margin-left: 2em;
+    text-align: left;
+  }
+  
+  /* Hover effect */
+  .sidebar-nav .sidebar-link:hover {
+    color: #007bff; /* Blue color on hover */
   }
   
