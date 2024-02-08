@@ -9,8 +9,9 @@ const MainContent: React.FC<MainContentProps> = ({ isSidebarOpen }) => {
     flex: 1,
     backgroundColor: '#f8d7da',
     minHeight: "100vh",
-    marginLeft: isSidebarOpen ? '230px' : '50px', // Adjust the values as per your sidebar width
+    marginLeft: isSidebarOpen ? '2px' : '5px', // Adjust the values as per your sidebar width
     transition: 'margin-left 0.3s ease-in-out',
+    padding: "4em"
   };
 
   return (
